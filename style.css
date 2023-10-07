@@ -1,0 +1,359 @@
+/* bg : #081b29
+    second bg : #112e42
+    text: #ededed
+    main: #00abf0
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: #000911;
+  color: #ededed;
+}
+.logo {
+  font-family: Brush Script MT;
+  /* font-weight: 700; */
+  font-size: 2em;
+  cursor: pointer;
+  /* font-style: oblique; */
+}
+.logo:hover {
+  transform: scale(1.1);
+  transition: 250ms ease-in-out;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 90vw;
+  justify-self: center;
+}
+/* .subHeader {
+  display: flex;
+  justify-content: center;
+} */
+.rootHeader {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+  background-color: #112e42;
+}
+.headerRight {
+  display: flex;
+}
+.headerItem {
+  margin: 0 10px;
+}
+.headerItem p:hover {
+  color: #00abf0;
+  transition: 100ms ease-in-out;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.home {
+  display: flex;
+  align-items: center;
+}
+.homeDiv {
+  flex: 1;
+  padding: 15em 4em;
+  /* heigh */
+
+}
+.userImage{
+  height: 420px;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  opacity: 0.7;
+  transition: opacity 300ms ease;
+}
+.userImage:hover{
+  opacity: 1;
+
+}
+/* .userImage:hover{
+  transform: translateX(30)
+} */
+
+.homeHeader {
+  font-size: 2.5em;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.homeSubHeader {
+  color: #00abf0;
+}
+.homeDescription {
+  font-size: 1.1em;
+  line-height: 2;
+}
+.aboutMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* line-height: 2; */
+}
+.aboutSubHeading {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.paddingDiv {
+  padding: 5em 4em;
+}
+.aboutDescription {
+  font-size: 1.1em;
+  line-height: 1.75;
+  opacity: 0.85;
+}
+.educationHeader {
+  font-size: 2em;
+}
+.educationItem {
+  padding: 1em;
+  margin: 1em;
+  border: 2px #00abf0 solid;
+  border-radius: 8px;
+  font-size: 1.1em;
+  line-height: 1.5;
+  max-width: 800px;
+}
+.year {
+  color: #00abf0;
+}
+.yearDiv {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.square {
+  height: 10px;
+  width: 10px;
+  background-color: #00abf0;
+  margin-right: 10px;
+}
+.degreeHeader {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.degreeDescription {
+  opacity: 0.85;
+}
+.skillMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skillItem {
+  width: 350px;
+  height: 450px;
+  background-color: #112e42;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+}
+.skillItem:hover {
+  border: solid 2.5px #00abf0;
+}
+.skillItemContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+.skillItemHeader {
+  font-size: 2em;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.skillItemDescription {
+  opacity: 0.7;
+}
+.skillDivison {
+  flex: 1;
+  padding: 0 5px;
+}
+.skillIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.skillIcon i {
+  font-size: 80px;
+}
+.headerIcons {
+  display: flex;
+  align-items: center;
+}
+.headerIcon {
+  margin: 5px 10px;
+}
+.headerIcon i {
+  font-size: 24px;
+  border-radius: 100%;
+  border: 2px solid #022748;
+  padding: 10px;
+  transition: all 300ms ease-in;
+}
+.headerIcon i:hover {
+  color: #00abf0;
+  border: #00abf0 2px solid;
+}
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px;
+}
+.input {
+  background-color: #112e42;
+  border: transparent solid 2px;
+  padding: 15px 12px;
+  margin: 10px 0;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+}
+.smallInput {
+  margin:0 5px;
+}
+input::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+input:focus {
+  border: 2px solid #00abf0;
+}
+textarea::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+textarea:focus {
+  border: 2px solid #00abf0;
+}
+form div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+button {
+  width: 200px;
+  padding: 12px 20px;
+  border: none;
+  background-color: #00abf0;
+  color: #ededed;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+}
+.menu:active {
+  opacity: 0.4;
+}
+.menu{
+  transition: all 200ms ease;
+  font-size: 24px;
+  display: none;
+}
+.image{
+  display: none;
+}
+.menuList{
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #001221;
+}
+.menuListItem{
+  
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menuListItem li{
+  margin: 20px;
+  font-size: 1.35em;
+}
+@media screen and (max-width:800px) {
+  #homeRight{
+    display: none;
+  
+  }
+  .image{
+    display: block;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .headerItem{
+    display: none;
+  }
+  #homeRight{
+    display: none;
+  }
+  .menu{
+    display: block;
+  }
+  /* .menuList{
+    display: block;
+  } */
+  form div{
+    flex-direction: column;
+  }
+  .smallInput{
+    margin: 10px;
+  }
+  .userImage{
+    height: 300px;
+    margin: 20px 0;
+  }
+  .homeDiv{
+    padding: 8em 2em;
+  }
+  .paddingDiv{
+    padding: 3em 2em;
+  }
+  .skillItem{
+    width: 250px;
+    height: 350px;
+  }
+}
+.visible{
+  display: block;
+}
+
+::-webkit-scrollbar{
+  background-color: #001221;
+  color: #ededed;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #00abf0;
+}
