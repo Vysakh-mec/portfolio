@@ -344,8 +344,9 @@ button {
     width: 250px;
     height: 350px;
   }
-    .logo{
-        font-size:1.5em
+  .logo{
+/*         font-size:1.5em */
+         font-size: 1.2em;
     }
 }
 .visible{
