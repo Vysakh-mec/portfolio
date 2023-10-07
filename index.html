@@ -223,12 +223,12 @@
                 <p class="homeHeader">Contact<span class="homeSubHeader"> Me!</span></p>
                 <form name="contact" method="post" data-netlify="true" >
 <!--                   data-netlify-honeypot="bot-field"  -->
-                        <input type="text" class="input" required placeholder="Full Name" autocomplete="off" />
-                        <input type="email" class="input " placeholder="Email Address" required autocomplete="off" />
+                        <input name="FullName" type="text" class="input" required placeholder="Full Name" autocomplete="off" />
+                        <input name="Email" type="email" class="input " placeholder="Email Address" required autocomplete="off" />
                   
-                    <input type="text" class="input" placeholder="Subject"  />
+                    <input name="Subject" type="text" class="input" placeholder="Subject"  />
                     <!-- <input type="text" class="input" placeholder="Message" /> -->
-                    <textarea name="" class="input" cols="30" rows="10" placeholder="Message" required></textarea>
+                    <textarea name="Message" class="input" cols="30" rows="10" placeholder="Message" required></textarea>
                     <button type="submit">Submit</button>
                 </form>
             </div>
